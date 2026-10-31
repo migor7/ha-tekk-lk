@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ТЕКК: личный кабинет",
+        "description": "Данные для входа в lk.tekk.pro. Логин обычно номер договора.",
+        "data": {
+          "username": "Логин (номер договора)",
+          "password": "Пароль"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Повторный вход в ТЕКК",
+        "description": "Пароль для {username} больше не подходит. Введите новый.",
+        "data": {
+          "password": "Пароль"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Неверный логин или пароль",
+      "cannot_connect": "Не удалось связаться с lk.tekk.pro или прочитать кабинет"
+    },
+    "abort": {
+      "already_configured": "Этот договор уже добавлен",
+      "reauth_successful": "Пароль обновлён"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Настройки ТЕКК",
+        "data": {
+          "scan_interval": "Интервал обновления, минут"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "balance": {
+        "name": "Баланс"
+      },
+      "status": {
+        "name": "Статус"
+      },
+      "tariff": {
+        "name": "Тариф"
+      },
+      "fee": {
+        "name": "Абонплата в месяц"
+      },
+      "payday": {
+        "name": "Следующее списание"
+      },
+      "next_charge": {
+        "name": "Сумма следующего списания"
+      },
+      "shortfall": {
+        "name": "Не хватает до списания"
+      },
+      "days_left": {
+        "name": "Дней до окончания оплаты"
+      },
+      "last_charge": {
+        "name": "Последнее списание"
+      },
+      "last_payment": {
+        "name": "Последний платёж"
+      }
+    },
+    "binary_sensor": {
+      "negative_balance": {
+        "name": "Баланс ниже порога"
+      },
+      "not_active": {
+        "name": "Услуга не активна"
+      },
+      "promise": {
+        "name": "Обещанный платёж"
+      }
+    }
+  }
+}

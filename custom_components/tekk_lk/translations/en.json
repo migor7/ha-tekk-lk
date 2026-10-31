@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TEKK account",
+        "description": "Credentials for lk.tekk.pro. The login is usually the contract number.",
+        "data": {
+          "username": "Login (contract number)",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate TEKK",
+        "description": "The password for {username} no longer works.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid login or password",
+      "cannot_connect": "Cannot reach or read lk.tekk.pro"
+    },
+    "abort": {
+      "already_configured": "Contract already configured",
+      "reauth_successful": "Password updated"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TEKK options",
+        "data": {
+          "scan_interval": "Update interval, minutes"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "balance": {
+        "name": "Balance"
+      },
+      "status": {
+        "name": "Status"
+      },
+      "tariff": {
+        "name": "Tariff"
+      },
+      "fee": {
+        "name": "Monthly fee"
+      },
+      "payday": {
+        "name": "Next charge"
+      },
+      "next_charge": {
+        "name": "Next charge amount"
+      },
+      "shortfall": {
+        "name": "Missing for next charge"
+      },
+      "days_left": {
+        "name": "Days of paid service left"
+      },
+      "last_charge": {
+        "name": "Last charge"
+      },
+      "last_payment": {
+        "name": "Last payment"
+      }
+    },
+    "binary_sensor": {
+      "negative_balance": {
+        "name": "Balance below threshold"
+      },
+      "not_active": {
+        "name": "Service not active"
+      },
+      "promise": {
+        "name": "Promised payment"
+      }
+    }
+  }
+}

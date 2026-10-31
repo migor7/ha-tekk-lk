@@ -1,0 +1,14 @@
+{
+  "domain": "tekk_lk",
+  "name": "ТЕКК (личный кабинет)",
+  "codeowners": [
+    "@migor7"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/migor7/ha-tekk-lk",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/migor7/ha-tekk-lk/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
